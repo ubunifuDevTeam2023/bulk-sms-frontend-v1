@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* colors */
+
+:root {
+  --pri-color: #043c4b;
+  --sec-color: #dcb187;
+  --ter-color: #fff;
+  --add-color: #999
+}
+
+/* colors */
+/* Signup styling startPoint */
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+/* left side startPoint */
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7%;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: var(--pri-color);
+}
+
+.left h1 {
+  font-size: 76px;
+  color: var(--ter-color);
+}
+
+.left h2{
+    color:var(--ter-color);
+    font-size: 28px;
+    margin-top: 10%;
+}
+
+.left p{
+    color: #fff;
+    width: 60%;
+    text-align: justify;
+}
+/* left side endPoint */
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ter-color);
+}
