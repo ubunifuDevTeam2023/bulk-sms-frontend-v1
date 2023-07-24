@@ -13,5 +13,6 @@
 
 ## Considerations
 - Use camel casing for element IDs
-- Use comments every neccessary to help other developers read and understand your code.
+- Use comments everywhere neccessary to help other developers read and understand your code.
 - When pushing code to this repo, ensure your commit messages are clear and direct
+- Before committing code to this repo, make sure your local repo is up-to-date using git pull
