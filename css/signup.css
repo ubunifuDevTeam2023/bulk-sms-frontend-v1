@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* colors */
+
+:root {
+  --pri-color: #043c4b;
+  --sec-color: #dcb187;
+  --ter-color: #fff;
+  --add-color: #999;
+}
+
+/* colors end */
+
+/* Signup styling startPoint */
+
+.main {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+}
+/* left side startPoint */
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--pri-color);
+  background-attachment: fixed;
+}
+
+.left h1 {
+  font-size: 76px;
+  margin-left: 7%;
+  color: var(--ter-color);
+}
+
+.left h2 {
+  color: var(--ter-color);
+  font-size: 28px;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.left p {
+  color: var(--add-color);
+  width: 80%;
+  text-align: justify;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 12px;
+  margin-left: 7%;
+}
+
+.left p:hover {
+  color: var(--ter-color);
+}
+.left button {
+  width: 250px;
+  background-color: var(--sec-color);
+  color: var(--pri-color);
+  padding: 10px 5px;
+  border: 3px solid var(--sec-color);
+  transition: 0.3s ease-in-out;
+  font-weight: 900;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 7%;
+}
+
+.left button:hover {
+  background-color: var(--pri-color);
+  color: var(--ter-color);
+  /* border: none; */
+}
+/* left side endPoint */
+
+/* right side startPoint */
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--sec-color);
+  background-attachment: fixed;
+}
+
+.right h3 {
+  font-size: 26px;
+  margin-top: 15px;
+  color: var(--tri-color);
+}
+
+.right h5 {
+  font-size: 16px;
+  color: var(--ter-color);
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+.right input {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 28px;
+  font-weight: 700;
+  border-radius: 5px;
+  color: var(--pri-color);
+  border: 1px solid var(--sec-color);
+  outline: none;
+  box-shadow: 0px 1px 3px 1px var(--add-color);
+}
+::placeholder {
+  color: var(--pri-color);
+  font-weight: 700;
+}
+.right button {
+  width: 250px;
+  background-color: var(--pri-color);
+  color: var(--ter-color);
+  padding: 10px 5px;
+  border: 3px solid var(--pri-color);
+  transition: 0.3s ease-in-out;
+  font-weight: 900;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.right button:hover {
+  background-color: var(--ter-color);
+  color: var(--pri-color);
+}
+/* right side endPoint */
+
+/* media queries start */
+
+/* nest hub start */
+@media(max-height:700px){
+    .main{
+        height: max-content;
+    }
+    .left, .right{
+        height: 114.5vh;
+    }
+}
+/* nest hub end */
+
+/* tablets  start */
+@media (max-width: 1023px) {
+  .main {
+    flex-direction: column-reverse;
+    height: max-content;
+  }
+ .right button{
+    width: 70%;
+ }
+ .left button{
+    width: 70%;
+ }
+
+  .left h1{
+    font-size: 50px;
+  }
+
+  .right,
+  .left {
+    width: 100%;
+    padding: 20px 0;
+    height: max-content;
+    margin: 0;
+  }
+
+
+  .right {
+    width: 100%;
+  }
+
+  
+}
+
+/* tablets end */
+
+
+/* phones start */
+@media(max-width:412px){
+    .main{
+        width: 100%;
+    }
+    .right input{
+        width: 80%;
+      }
+      .right, .left{
+        width: 100%;
+      }
+}
+
+/* phones end */
+
+/* media queries start */
+
+/* Signup styling endPoint */
