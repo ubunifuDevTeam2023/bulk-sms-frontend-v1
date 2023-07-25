@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.log {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.log1 {
+    height: 100%;
+    width: 50%;
+    background-color: #043c4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.log1 button {
+    width: 25%;
+    height: 6%;
+    background-color: #043c4b;
+    font-size: 12px;
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.log1 p {
+    width: 80%;
+}
+
+.log2 {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.log2 p {
+    color: #868ba1;
+}
+
+.log2 input {
+    width: 50%;
+    height: 6%;
+    padding-left: 2px;
+}
+
+.log2 button{
+    width: 50%;
+    height: 6%;
+    background-color: #043c4b;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+
+}
+@media (max-width:320px) {
+    .log {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .log1 {
+        height: max-content;
+    }
+    .log1 button {
+        width: 80%;
+        height: max-content;
+    }
+}
