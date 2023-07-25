@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --pri-color: #043c4b;
+    --sec-color: #dcb187;
+    --ter-color: #fff;
+    --add-color: #d3d3d3;
+  }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--ter-color);
+    overflow-x: hidden;
+    
+}
+/* navbar */
+nav{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.placer{
+    width: 80%;
+    margin: 0 auto;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hero-one{
+    height: 100vh;
+    background: url(../images/pexels-andrea-piacquadio-3765106.jpg)no-repeat center center/cover fixed; 
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.5);
+}
+.pages
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pages div a{
+    text-decoration: none;
+    color: var(--ter-color);
+    font-weight: 500;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pages div::after{
+    display: block;
+    width: 0%;
+    background: var(--sec-color);
+    height: 3px;
+    border-radius: 6px;
+    transition: .4s ease-in-out;
+    content: '';
+    margin-top: 5px;
+}
+.pages div:hover::after{
+    width: 100%;
+}
+.pages div:hover a{
+    color: var(--sec-color);
+}
+.pages button{
+    font-size: 19px;
+    border: transparent;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
+    transition: .2s ease-in-out;
+    background: var(--pri-color);
+    color: var(--sec-color);
+    cursor: pointer;
+    
+}
+.pages button:hover{
+    color: var(--sec-color);
+    background: transparent;
+    border: 2px solid var(--sec-color);
+}
+#hero-content{
+    width: 100%;
+    height: 85vh;
+}
+.placer2{
+    width: 80%;
+    height: 85vh;
+    margin: 0 auto;
+
+}
+.hero-left{
+    width: 50%;
+    flex-direction: column;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.hero-left h3{
+color: var(--ter-color);
+font-size: 30px;
+}
+.hero-left h1{
+    font-size: 45px;
+    color: var(--pri-color);
+    margin-top: 20px;
+
+}
+.hero-left p{
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--add-color);
+
+}
+.hero-left button{
+    font-size: 21px;
+    border: transparent;
+    border-radius: 7px;
+    margin-top: 40px;
+    width: 150px;
+    height: 45px;
+    transition: .2s ease-in-out;
+    background: var(--pri-color);
+    color: var(--sec-color);
+    cursor: pointer;
+}
+.hero-left button:hover{
+    color: var(--sec-color);
+    background: transparent;
+    border: 3px solid var(--sec-color);
+}
