@@ -141,7 +141,7 @@
     .main{
         height: max-content;
     }
-    .left{
+    .left, .right{
         height: 114.5vh;
     }
 }
@@ -150,10 +150,19 @@
 /* tablets  start */
 @media (max-width: 1023px) {
   .main {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: max-content;
   }
+ .right button{
+    width: 70%;
+ }
+ .left button{
+    width: 70%;
+ }
 
+  .left h1{
+    font-size: 50px;
+  }
 
   .right,
   .left {
