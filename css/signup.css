@@ -129,7 +129,7 @@
 }
 
 .right button:hover {
-  background-color: var(--ter-color);
+  background-color: var(--sec-color);
   color: var(--pri-color);
 }
 /* right side endPoint */
