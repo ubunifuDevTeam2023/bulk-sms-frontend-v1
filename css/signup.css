@@ -12,7 +12,9 @@
 }
 
 /* colors end */
-
+html{
+  scroll-behavior: smooth;
+}
 /* Signup styling startPoint */
 
 .main {
@@ -109,7 +111,7 @@
   color: var(--pri-color);
   border: 1px solid var(--sec-color);
   outline: none;
-  box-shadow: 0px 1px 3px 1px var(--add-color);
+  filter: drop-shadow(0px 1px 3px 1px var(--add-color));
 }
 ::placeholder {
   color: var(--pri-color);
