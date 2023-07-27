@@ -4,13 +4,16 @@
 }
 :root {
     --pri-color: #043c4b;
+    --priDark-color: #01222b;
+    --priLight-color: #035971;
     --sec-color: #dcb187;
     --ter-color: #fff;
-    --add-color: #d3d3d3;
+    --add-color: #e3e1e1;
+    --addDark-color: #b6b3b3;
   }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--ter-color);
+    background: var(--pri-color);
     overflow-x: hidden;
     
 }
@@ -31,6 +34,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.logo{
+    color: var(--sec-color);
+}
 #hero-one{
     height: 100vh;
     background: url(../images/pexels-andrea-piacquadio-3765106.jpg)no-repeat center center/cover fixed; 
@@ -47,7 +53,7 @@ nav{
 }
 .pages div a{
     text-decoration: none;
-    color: var(--ter-color);
+    color: var(--sec-color);
     font-weight: 500;
     padding: 0 10px;
     font-size: 20px;
@@ -137,3 +143,78 @@ font-size: 30px;
     background: transparent;
     border: 3px solid var(--sec-color);
 }
+
+#services{
+    height: 100vh;
+}
+.topic{
+    width: 80%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.topic h3{
+    font-size: 60px;
+    margin: 30px 0px 10px 0px;
+    color: var(--ter-color);
+}
+.topic p{
+    font-size: 20px;
+    margin: 10px;
+    color: var(--add-color);
+}
+.separator{
+    width:300px;
+    height: 2px;
+    margin: 0px 0;
+    border-radius: 10px;
+    background: var(--sec-color);
+}
+
+.icon img{
+    width: 80px;
+}
+.feature-box{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px 0;
+    height: auto;
+    gap: 50px;
+}
+.card{
+    width: 25%;
+    display: flex;
+    border-radius: 10px;
+    background: var(--pri-color);
+    box-shadow: 6px 6px 20px var(--priDark-color),-6px -6px 20px var(--priLight-color);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s ease-in-out;
+    height: 250px;
+}
+.description{
+    text-align: center;
+    color: add;
+}
+.cardName{
+    font-size: 30px;
+    color: var(--ter-color);
+
+}
+.description{
+    color: var(--addDark-color);
+}
+.card:hover{
+    transform: scale(.95);
+    cursor: pointer;
+    box-shadow: 6px 6px 20px var(--priLight-color),-6px -6px 20px var(--priDark-color);
+
+}
+
