@@ -146,6 +146,7 @@ font-size: 30px;
 
 #services{
     height: 100vh;
+    padding-bottom: 50px;
 }
 .topic{
     width: 80%;
@@ -205,7 +206,7 @@ font-size: 30px;
 }
 .cardName{
     font-size: 30px;
-    color: var(--ter-color);
+    color: var(--sec-color);
 
 }
 .description{
@@ -217,4 +218,63 @@ font-size: 30px;
     box-shadow: 6px 6px 20px var(--priLight-color),-6px -6px 20px var(--priDark-color);
 
 }
+#contact{
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #01222b;
+}
+.art{
+    width: 50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--priDark-color);
+}
+.art p{
+    text-align: center;
+font-size: 18px;
+color: var(--ter-color);
+width: 80%;
+padding-bottom: 20px;
+}
 
+.contact{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contact h1{
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: var(--sec-color);
+
+}
+.contact p{
+    text-align: start;
+    padding: 10px;
+    color: var(--ter-color);
+    font-size: 18px;
+}
+footer{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    color: var(--ter-color);
+}
+.kaline{
+    width: 2px;
+    height: 70%;
+    background: var(--sec-color);
+}
