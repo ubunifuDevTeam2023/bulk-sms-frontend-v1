@@ -10,28 +10,43 @@
     display: flex;
 }
 
-.log1 {
+.logi {
     height: 100%;
-    width: 50%;
-    background-color: #043c4b;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.655);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+
 }
+
+.log1 {
+    height: 100%;
+    width: 50%;
+    /* background-color: #043c4b; */
+    background-image: url(/images/pexels-cottonbro-studio-3206079.jpg);
+    background-size: cover;
+
+    color: #fff;
+
+}
+
 
 .log1 h1 {
     font-size: 76px;
 }
+
 .log1 button {
     width: 25%;
-    height: 6%;
+    height: 7%;
     background-color: #043c4b;
     font-size: 12px;
-    border-color: #fff;
     color: #fff;
     cursor: pointer;
+    font-weight: 400;
+    border-radius: 10px;
+    /* border: none; */
 }
 
 .log1 h2 {
@@ -41,9 +56,9 @@
 
 .log1 p {
     width: 80%;
-    color: #999;
+    color: #dcb187;
     transition: 0.3s ease-in-out;
-  
+
 }
 
 .log1 p:hover {
@@ -53,12 +68,16 @@
 .log2 {
     height: 100%;
     width: 50%;
-    background-color: #dcb187;
+    background-color: #043c4b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+
+.log2 h1 {
+    color: #fff;
 }
 
 .log2 p {
@@ -82,26 +101,51 @@
     font-weight: 700;
 }
 
-.log2 button{
-    width: 50%;
+.log2 button {
+    width: 40%;
     height: 6%;
-    background-color: #043c4b;
+    background-color: #dcb187;
     border: none;
     border-radius: 3px;
     color: #ffffff;
+    font-weight: 50px;
+    font-size: 20px;
 
 }
+.log2 a {
+    color: #dcb187;
+    text-decoration: none;
+}
+
 @media (max-width:1024px) {
     .log {
         flex-direction: column-reverse;
-        
+
     }
-    .log1, .log2 {
+
+    
+    .log2 {
         width: 100%;
-        
+        height: 50%;
+
     }
+
+    .log1{
+        height: max-content;
+        width: 100%;
+    }
+    .logi {
+        height: max-content;
+    } 
+
     .log1 button {
         width: 80%;
-        height: max-content;
+        height: 40px;
+    }
+
+    .log2 button {
+        height: 100%;
+        width: 50%;
     }
 }
+
